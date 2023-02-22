@@ -1,0 +1,266 @@
+﻿<ui:UiPage
+    x:Class="AutoTravian.UI.Views.Pages.AutoRaidPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:AutoTravian.UI.Views.Pages"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:models="clr-namespace:AutoTravian.UI.Models"
+    xmlns:ui="http://schemas.lepo.co/wpfui/2022/xaml"
+    Title="AutoRaidPage"
+    Scrollable="True"
+    d:DataContext="{d:DesignInstance local:ResourcesPage,
+                                     IsDesignTimeCreatable=False}"
+    d:DesignHeight="450"
+    d:DesignWidth="800"
+    d:Background="{DynamicResource ApplicationBackgroundBrush}"
+    Foreground="{DynamicResource TextFillColorPrimaryBrush}"
+    mc:Ignorable="d">
+    <StackPanel CanVerticallyScroll="True">
+        <GroupBox Header="Create Raid" Margin="20,5">
+            <StackPanel>
+                <StackPanel Grid.Column="3" Orientation="Horizontal" Margin="0,10">
+                    <TextBlock Text="Task name: " Margin="10,0" VerticalAlignment="Center"></TextBlock>
+                    <TextBox Width="150" Margin="10,0"></TextBox>
+                    <StackPanel Orientation="Horizontal" Height="37" Width="113">
+                        <TextBlock Text="Mode:" VerticalAlignment="Center" />
+                        <ComboBox Margin="10,0"/>
+                    </StackPanel>
+                    <ui:ToggleSwitch Margin="10,0">AI Mode</ui:ToggleSwitch>
+                    <ui:ToggleSwitch Margin="10,0">Send hero</ui:ToggleSwitch>
+                </StackPanel>
+                <GroupBox Header="Start village" Margin="10,0">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="auto" />
+                            <ColumnDefinition Width="auto" />
+                            <ColumnDefinition Width="auto" />
+                        </Grid.ColumnDefinitions>
+                        <StackPanel Orientation="Horizontal" Grid.Column="0">
+                            <TextBlock Margin="10,0,0,0" Text="X:" VerticalAlignment="Center" />
+                            <TextBox Margin="10,0" Text="10"></TextBox>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal" Grid.Column="1">
+                            <TextBlock Text="Y:" VerticalAlignment="Center" />
+                            <TextBox Margin="10,0" Text="10"></TextBox>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal" Grid.Column="2">
+                            <TextBlock Text="Village:" VerticalAlignment="Center" />
+                            <ComboBox Margin="10,0"></ComboBox>
+                        </StackPanel>
+                    </Grid>
+                </GroupBox>
+                <Grid Margin="0,10">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <GroupBox Header="Oases settings" Grid.Column="0" Margin="10,0">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <StackPanel Grid.Column="0">
+                                <ui:ToggleSwitch Margin="5">Active</ui:ToggleSwitch>
+                                <ui:ToggleSwitch Margin="5">Allow Occupied</ui:ToggleSwitch>
+                                <ui:ToggleSwitch Margin="5">Safe only</ui:ToggleSwitch>
+                            </StackPanel>
+                            <StackPanel Grid.Column="1">
+                                <ui:ToggleSwitch Margin="5">
+                                    <Image Width="20" Height="20" Source="/Resources/resources/crop_large.png"/>
+                                </ui:ToggleSwitch>
+                                <ui:ToggleSwitch Margin="5">
+                                    <Image Width="20" Height="20" Source="/Resources/resources/clay_large.png"/>
+                                </ui:ToggleSwitch>
+                                <ui:ToggleSwitch Margin="5">
+                                    <Image Width="20" Height="20" Source="/Resources/resources/lumber_large.png"/>
+                                </ui:ToggleSwitch>
+                                <ui:ToggleSwitch Margin="5">
+                                    <Image Width="20" Height="20" Source="/Resources/resources/iron_large.png"/>
+                                </ui:ToggleSwitch>
+                            </StackPanel>
+                        </Grid>
+                    </GroupBox>
+                    <GroupBox Header="Villages settings" Grid.Column="1" Margin="10,0">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <StackPanel Grid.Column="0">
+                                <ui:ToggleSwitch Margin="5">Allow Normals</ui:ToggleSwitch>
+                                <ui:ToggleSwitch Margin="5">Allow Natars</ui:ToggleSwitch>
+                                <ui:ToggleSwitch Margin="5">Allow Allies</ui:ToggleSwitch>
+                            </StackPanel>
+                            <StackPanel Grid.Column="1">
+                                <StackPanel>
+                                    <TextBlock>Min population:</TextBlock>
+                                    <TextBox></TextBox>
+                                </StackPanel>
+                                <StackPanel>
+                                    <TextBlock>Max population:</TextBlock>
+                                    <TextBox></TextBox>
+                                </StackPanel>
+                            </StackPanel>
+                        </Grid>
+                    </GroupBox>
+                </Grid>
+                <GroupBox Header="Squad" Margin="10,0">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="auto" />
+                            <ColumnDefinition Width="auto" />
+                            <ColumnDefinition Width="auto" />
+                            <ColumnDefinition Width="auto" />
+                            <ColumnDefinition Width="auto" />
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="auto" />
+                            <RowDefinition Height="auto" />
+                        </Grid.RowDefinitions>
+                        <StackPanel Grid.Column="0" Grid.Row="0" Orientation="Horizontal">
+                            <Image Margin="10,0,0,0" Source="/Resources/units/11.png" Height="20" Width="20"/>
+                            <ui:TextBox PlaceholderText="Club" Width="85" Margin="10"/>
+                        </StackPanel>
+                        <StackPanel Grid.Column="1" Grid.Row="0" Orientation="Horizontal">
+                            <Image Margin="10,0,0,0" Source="/Resources/units/12.png" Height="20" Width="20"/>
+                            <ui:TextBox PlaceholderText="Spearman" Width="85" Margin="10"/>
+                        </StackPanel>
+                        <StackPanel Grid.Column="2" Grid.Row="0" Orientation="Horizontal">
+                            <Image Margin="10,0,0,0" Source="/Resources/units/13.png" Height="20" Width="20"/>
+                            <ui:TextBox PlaceholderText="Axeman" Width="85" Margin="10"/>
+                        </StackPanel>
+                        <StackPanel Grid.Column="3" Grid.Row="0" Orientation="Horizontal">
+                            <Image Margin="10,0,0,0" Source="/Resources/units/14.png" Height="20" Width="20"/>
+                            <ui:TextBox PlaceholderText="Scout" Width="85" Margin="10"/>
+                        </StackPanel>
+                        <StackPanel Grid.Column="4" Grid.Row="0" Orientation="Horizontal">
+                            <Image Margin="10,0,0,0" Source="/Resources/units/15.png" Height="20" Width="20"/>
+                            <ui:TextBox PlaceholderText="Paladin" Width="85" Margin="10"/>
+                        </StackPanel>
+
+                        <StackPanel Grid.Column="0" Grid.Row="1" Orientation="Horizontal">
+                            <Image Margin="10,0,0,0" Source="/Resources/units/16.png" Height="20" Width="20"/>
+                            <ui:TextBox PlaceholderText="Knight" Width="85" Margin="10"/>
+                        </StackPanel>
+                        <StackPanel Grid.Column="1" Grid.Row="1" Orientation="Horizontal">
+                            <Image Margin="10,0,0,0" Source="/Resources/units/17.png" Height="20" Width="20"/>
+                            <ui:TextBox PlaceholderText="Ram" Width="85" Margin="10"/>
+                        </StackPanel>
+                        <StackPanel Grid.Column="2" Grid.Row="1" Orientation="Horizontal">
+                            <Image Margin="10,0,0,0" Source="/Resources/units/18.png" Height="20" Width="20"/>
+                            <ui:TextBox PlaceholderText="Catapult" Width="85" Margin="10"/>
+                        </StackPanel>
+                        <StackPanel Grid.Column="3" Grid.Row="1" Orientation="Horizontal">
+                            <Image Margin="10,0,0,0" Source="/Resources/units/19.png" Height="20" Width="20"/>
+                            <ui:TextBox PlaceholderText="Chief" Width="85" Margin="10"/>
+                        </StackPanel>
+                        <StackPanel Grid.Column="4" Grid.Row="1" Orientation="Horizontal">
+                            <Image Margin="10,0,0,0" Source="/Resources/units/20.png" Height="20" Width="20"/>
+                            <ui:TextBox PlaceholderText="Settler" Width="85" Margin="10"/>
+                        </StackPanel>
+                    </Grid>
+                </GroupBox>
+            </StackPanel>
+        </GroupBox>
+        <Grid Margin="30,20,30,20">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="auto" />
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="auto" />
+            </Grid.ColumnDefinitions>
+            <GroupBox Grid.Column="0" Header="Map Infos">
+                <StackPanel Margin="5,5,5,5">
+                    <StackPanel Margin="5,5,5,5" Orientation="Horizontal">
+                        <Image Width="20" Height="20" Source="/Resources/resources/lumber_large.png"/>
+                        <TextBlock Margin="10,0" FontSize="12" FontWeight="Medium" Text="Unoccupied oasis (8|20) " />
+                    </StackPanel>
+                    <StackPanel Margin="5,5,5,5" Orientation="Horizontal">
+                        <Image Width="20" Height="20" Source="/Resources/resources/lumber_large.png"/>
+                        <TextBlock Margin="10,0" FontSize="12" FontWeight="Medium" Text="Unoccupied oasis (8|20) " />
+                    </StackPanel>
+                    <StackPanel Margin="5,5,5,5" Orientation="Horizontal">
+                        <Image Width="20" Height="20" Source="/Resources/resources/lumber_large.png"/>
+                        <TextBlock Margin="10,0" FontSize="12" FontWeight="Medium" Text="Unoccupied oasis (8|20) " />
+                    </StackPanel>
+                    <StackPanel Margin="5,5,5,5" Orientation="Horizontal">
+                        <Image Width="20" Height="20" Source="/Resources/resources/lumber_large.png"/>
+                        <TextBlock Margin="10,0" FontSize="12" FontWeight="Medium" Text="Unoccupied oasis (8|20) " />
+                    </StackPanel>
+                </StackPanel>
+            </GroupBox>
+            <Border Grid.Column="1" BorderBrush="#FF949B9F" BorderThickness="1" Margin="5,5,5,5">
+                <Grid>
+                    <Grid.Background>
+                        <ImageBrush ImageSource="/Resources/fields/bgResources.jpg" Stretch="UniformToFill" TileMode="None" >
+                            <ImageBrush.RelativeTransform>
+                                <TransformGroup>
+                                    <ScaleTransform CenterY="0.5" CenterX="0.5" ScaleX="5" ScaleY="5"/>
+                                    <SkewTransform CenterX="0.5" CenterY="0.5"/>
+                                    <RotateTransform CenterX="0.5" CenterY="0.5"/>
+                                    <TranslateTransform X="0"/>
+                                </TransformGroup>
+                            </ImageBrush.RelativeTransform>
+                        </ImageBrush>
+                    </Grid.Background>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="20*" />
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="20*" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <Grid Grid.Column="1" Margin="0,6,0,3" Grid.Row="1">
+                        <Image Source="/Resources/10.40.19.49.png" Stretch="Uniform" Height="400" />
+                    </Grid>
+                </Grid>
+            </Border>
+            <StackPanel Grid.Column="2">
+                <GroupBox Header="Bonus">
+                    <StackPanel>
+                        <StackPanel Margin="5,5,5,5" Orientation="Horizontal">
+                            <Image Width="20" Height="20" Source="/Resources/resources/lumber_large.png"/>
+                            <TextBlock Margin="10,0" FontSize="12" FontWeight="Medium" Text="25% Lumber" />
+                        </StackPanel>
+                        <StackPanel Margin="5,5,5,5" Orientation="Horizontal">
+                            <Image Width="20" Height="20" Source="/Resources/resources/crop_large.png"/>
+                            <TextBlock Margin="10,0" FontSize="12" FontWeight="Medium" Text="25% Crop" />
+                        </StackPanel>
+                    </StackPanel>
+                </GroupBox>
+                <GroupBox Header="Enemies">
+                    <StackPanel>
+                        <StackPanel Margin="5,5,5,5" Orientation="Horizontal">
+                            <Image Width="20" Height="20" Source="/Resources/units/35.png"/>
+                            <TextBlock Margin="10,0" FontSize="12" FontWeight="Medium" Text="4 Wild Boar" />
+                        </StackPanel>
+                        <StackPanel Margin="5,5,5,5" Orientation="Horizontal">
+                            <Image Width="20" Height="20" Source="/Resources/units/36.png"/>
+                            <TextBlock Margin="10,0" FontSize="12" FontWeight="Medium" Text="4 Wolf" />
+                        </StackPanel>
+                        <StackPanel Margin="5,5,5,5" Orientation="Horizontal">
+                            <Image Width="20" Height="20" Source="/Resources/units/37.png"/>
+                            <TextBlock Margin="10,0" FontSize="12" FontWeight="Medium" Text="7 Bear" />
+                        </StackPanel>
+                    </StackPanel>
+                </GroupBox>
+                <GroupBox Header="Status">
+                    <StackPanel>
+                        <TextBlock Margin="10,0" FontSize="12" FontWeight="Medium" Text="" />
+                        <TextBlock Margin="10,0" FontSize="12" FontWeight="Medium" Text="" />
+                    </StackPanel>
+                </GroupBox>
+                <GroupBox Grid.Column="2" Header="Actions">
+                    <StackPanel>
+                        <Button Content="Raid" HorizontalAlignment="Stretch" Margin="5,5,5,5" />
+                    </StackPanel>
+                </GroupBox>
+            </StackPanel>
+        </Grid>
+
+    </StackPanel>
+</ui:UiPage>

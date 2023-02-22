@@ -1,0 +1,1302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ExchangeOnOverflow" xml:space="preserve">
+    <value>Exchange on overflow</value>
+  </data>
+  <data name="UpdateAvailableDesc" xml:space="preserve">
+    <value>A new update is available, please close the application and run TrBuilderUpdater.exe to update the application.</value>
+  </data>
+  <data name="String2" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ExchangeRate" xml:space="preserve">
+    <value>Exchange rate</value>
+  </data>
+  <data name="TabHeaderResources" xml:space="preserve">
+    <value>Resources</value>
+  </data>
+  <data name="Information" xml:space="preserve">
+    <value>Information</value>
+  </data>
+  <data name="FightingStregth" xml:space="preserve">
+    <value>Fighting strength</value>
+  </data>
+  <data name="UnitTitle3" xml:space="preserve">
+    <value>Imperian</value>
+  </data>
+  <data name="UnitTitle2" xml:space="preserve">
+    <value>Praetorian</value>
+  </data>
+  <data name="UnitTitle1" xml:space="preserve">
+    <value>Legionnaire</value>
+  </data>
+  <data name="UnitTitle7" xml:space="preserve">
+    <value>Battering Ram</value>
+  </data>
+  <data name="UnitTitle6" xml:space="preserve">
+    <value>Equites Caesaris</value>
+  </data>
+  <data name="UnitTitle5" xml:space="preserve">
+    <value>Equites Imperatoris</value>
+  </data>
+  <data name="UnitTitle4" xml:space="preserve">
+    <value>Equites Legati</value>
+  </data>
+  <data name="UnitTitle9" xml:space="preserve">
+    <value>Senator</value>
+  </data>
+  <data name="UnitTitle8" xml:space="preserve">
+    <value>Fire Catapult</value>
+  </data>
+  <data name="ExistingFarmlistName" xml:space="preserve">
+    <value>Existing farmlist:</value>
+  </data>
+  <data name="Error_InvalidServerUrl" xml:space="preserve">
+    <value>Invalid server url</value>
+  </data>
+  <data name="TabHeaderSmithyAndAcademy" xml:space="preserve">
+    <value>Academy | Smithy</value>
+  </data>
+  <data name="LicenseExpirationDate" xml:space="preserve">
+    <value>Expiration date:</value>
+  </data>
+  <data name="NewBuildingTypeMilitary" xml:space="preserve">
+    <value>Military</value>
+  </data>
+  <data name="MaximumWoodThreshold" xml:space="preserve">
+    <value>Maximum wood threshold</value>
+  </data>
+  <data name="CreateNewFarmlists" xml:space="preserve">
+    <value>New farmlist</value>
+  </data>
+  <data name="Export" xml:space="preserve">
+    <value>Export</value>
+  </data>
+  <data name="WaitAfterSendingList" xml:space="preserve">
+    <value>Wait after sending list for</value>
+  </data>
+  <data name="CelebrationType" xml:space="preserve">
+    <value>Celebration type:</value>
+  </data>
+  <data name="OffensivegBonus" xml:space="preserve">
+    <value>Offensive bonus</value>
+  </data>
+  <data name="Active" xml:space="preserve">
+    <value>Active</value>
+  </data>
+  <data name="AllTo5" xml:space="preserve">
+    <value>All to 5</value>
+  </data>
+  <data name="unableToLoginErrorMsg" xml:space="preserve">
+    <value>Unable to login to account using provided credentials.</value>
+  </data>
+  <data name="AccountLoginLogin" xml:space="preserve">
+    <value>Login</value>
+  </data>
+  <data name="AutoSendGreen" xml:space="preserve">
+    <value>Automatically raid green farms</value>
+  </data>
+  <data name="AccountLoginProxy" xml:space="preserve">
+    <value>Proxy (HTTP Proxy Only):</value>
+  </data>
+  <data name="OasesSettings" xml:space="preserve">
+    <value>Oases settings</value>
+  </data>
+  <data name="AccountLoginEdit" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="AccountLoginSave" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="AutomaticallyExchangeWhenCropIsBelowThreshold" xml:space="preserve">
+    <value>Automatically exchange resources when crop is less than threshold</value>
+  </data>
+  <data name="UnableToCheckLicense" xml:space="preserve">
+    <value>Unable to check license data</value>
+  </data>
+  <data name="InvalidNegetiveCropThreshold" xml:space="preserve">
+    <value>Invalid negetive crop threshold</value>
+  </data>
+  <data name="BuildingTaskLevel" xml:space="preserve">
+    <value>Level:</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="AutoSendFarmlists" xml:space="preserve">
+    <value>Automatically send farmlists</value>
+  </data>
+  <data name="MinPOP" xml:space="preserve">
+    <value>Min pop:</value>
+  </data>
+  <data name="MaxPOP" xml:space="preserve">
+    <value>Max pop:</value>
+  </data>
+  <data name="SendFarmlistsEvery" xml:space="preserve">
+    <value>Send farmlists every</value>
+  </data>
+  <data name="TasksListViewHeaderBuilding" xml:space="preserve">
+    <value>Building</value>
+  </data>
+  <data name="ErrorSavingSettings" xml:space="preserve">
+    <value>An error occured saving settings</value>
+  </data>
+  <data name="TabHeaderTraining" xml:space="preserve">
+    <value>Training</value>
+  </data>
+  <data name="CheckingHeroPoints" xml:space="preserve">
+    <value>Checking hero points</value>
+  </data>
+  <data name="TelegramSupport" xml:space="preserve">
+    <value>Telegram support:</value>
+  </data>
+  <data name="AutomaticTrainWhenAvailable" xml:space="preserve">
+    <value>Train when resources are available</value>
+  </data>
+  <data name="Import" xml:space="preserve">
+    <value>Import</value>
+  </data>
+  <data name="ResourcesBonus" xml:space="preserve">
+    <value>Resources bonus</value>
+  </data>
+  <data name="LogTabHeader" xml:space="preserve">
+    <value>Logs</value>
+  </data>
+  <data name="UpgradeBuildingWindowTitle" xml:space="preserve">
+    <value>Upgrade building</value>
+  </data>
+  <data name="NormalTraining" xml:space="preserve">
+    <value>Normal</value>
+  </data>
+  <data name="TrainingWhenAvailable" xml:space="preserve">
+    <value>Train when resources are available</value>
+  </data>
+  <data name="ImportSuccess" xml:space="preserve">
+    <value>Tasks have been imported successfully</value>
+  </data>
+  <data name="Adventures" xml:space="preserve">
+    <value>Adventures:</value>
+  </data>
+  <data name="AccountLoginUsername" xml:space="preserve">
+    <value>Username:</value>
+  </data>
+  <data name="NewFarmlistTypeExisting" xml:space="preserve">
+    <value>Existing list</value>
+  </data>
+  <data name="AccountMenuItemAdd" xml:space="preserve">
+    <value>New account</value>
+  </data>
+  <data name="FileMenuItemExport" xml:space="preserve">
+    <value>Export</value>
+  </data>
+  <data name="InvalidCheckAdventureInterval" xml:space="preserve">
+    <value>Invalid adventure check interval</value>
+  </data>
+  <data name="InvalidExchangeRate" xml:space="preserve">
+    <value>Exchange percent invalid</value>
+  </data>
+  <data name="AccountLoginAccount" xml:space="preserve">
+    <value>Account:</value>
+  </data>
+  <data name="Health" xml:space="preserve">
+    <value>Health:</value>
+  </data>
+  <data name="FarmlistVillageSettings" xml:space="preserve">
+    <value>Villages</value>
+  </data>
+  <data name="BuildingTitle3" xml:space="preserve">
+    <value>Iron Mine</value>
+  </data>
+  <data name="BuildingTitle2" xml:space="preserve">
+    <value>Clay Pit</value>
+  </data>
+  <data name="BuildingTitle1" xml:space="preserve">
+    <value>Woodcutter</value>
+  </data>
+  <data name="BuildingTitle7" xml:space="preserve">
+    <value>Iron Foundry</value>
+  </data>
+  <data name="BuildingTitle6" xml:space="preserve">
+    <value>Brickyard</value>
+  </data>
+  <data name="BuildingTitle5" xml:space="preserve">
+    <value>Sawmill</value>
+  </data>
+  <data name="BuildingTitle4" xml:space="preserve">
+    <value>Cropland</value>
+  </data>
+  <data name="BuildingTitle9" xml:space="preserve">
+    <value>Bakery</value>
+  </data>
+  <data name="BuildingTitle8" xml:space="preserve">
+    <value>Grain Mill</value>
+  </data>
+  <data name="newAccountInListStr" xml:space="preserve">
+    <value>New account</value>
+  </data>
+  <data name="AutomaticallySendHeroToAdventures" xml:space="preserve">
+    <value>Automatically send hero to adventure</value>
+  </data>
+  <data name="AutomaticallyExchangeClayOnThreshold" xml:space="preserve">
+    <value>Automatically exchange resources when clay is more than threshold</value>
+  </data>
+  <data name="AccountLoginPassword" xml:space="preserve">
+    <value>Password:</value>
+  </data>
+  <data name="AppVersion" xml:space="preserve">
+    <value>Version:</value>
+  </data>
+  <data name="CheckAcademyEvery" xml:space="preserve">
+    <value>Check academy every</value>
+  </data>
+  <data name="TabHeaderSmithyDesc" xml:space="preserve">
+    <value>To upgrade units to preferred level, set the settings below and then click save button.</value>
+  </data>
+  <data name="LicenseMachineID" xml:space="preserve">
+    <value>Machine ID:</value>
+  </data>
+  <data name="HeroTabHeader" xml:space="preserve">
+    <value>Hero</value>
+  </data>
+  <data name="AutoRaidFarmlists" xml:space="preserve">
+    <value>Auto raid</value>
+  </data>
+  <data name="TabHeaderAcademy" xml:space="preserve">
+    <value>Academy</value>
+  </data>
+  <data name="AutomaticallyExchangeCropOnThreshold" xml:space="preserve">
+    <value>Automatically exchange resources when crop is more than threshold</value>
+  </data>
+  <data name="AllToMax" xml:space="preserve">
+    <value>All to max</value>
+  </data>
+  <data name="LicenseIsValidYES" xml:space="preserve">
+    <value>Yes</value>
+  </data>
+  <data name="FileMenuItemImport" xml:space="preserve">
+    <value>Import</value>
+  </data>
+  <data name="AutomaticTrainingEnabled" xml:space="preserve">
+    <value>Automatically training enabled</value>
+  </data>
+  <data name="DisableAllFarmlists" xml:space="preserve">
+    <value>Disable all farmlists</value>
+  </data>
+  <data name="LicenseIsValid" xml:space="preserve">
+    <value>Valid:</value>
+  </data>
+  <data name="AreYouSure" xml:space="preserve">
+    <value>Are you sure?</value>
+  </data>
+  <data name="AutomaticallyExchangeWoodOnThreshold" xml:space="preserve">
+    <value>Automatically exchange resources when wood is more than threshold</value>
+  </data>
+  <data name="SettingsSaved" xml:space="preserve">
+    <value>Settings have been saved</value>
+  </data>
+  <data name="FarmlistIncludeWWVillagesAndArtefacts" xml:space="preserve">
+    <value>Include WW Villages and Artefacts (WW Plans)</value>
+  </data>
+  <data name="NewFarmlistTypeNew" xml:space="preserve">
+    <value>New list</value>
+  </data>
+  <data name="FileMenuItemExit" xml:space="preserve">
+    <value>Exit</value>
+  </data>
+  <data name="LicenseIPAddress" xml:space="preserve">
+    <value>IP address:</value>
+  </data>
+  <data name="FarmlistMaxDistance" xml:space="preserve">
+    <value>Max distance:</value>
+  </data>
+  <data name="CheckForCelebrationsEvery" xml:space="preserve">
+    <value>Check for celebrations every:</value>
+  </data>
+  <data name="FailedToConnectToProxy" xml:space="preserve">
+    <value>Failed to connect using proxy</value>
+  </data>
+  <data name="IncludeVillages" xml:space="preserve">
+    <value>Include normal villages</value>
+  </data>
+  <data name="IncludeOccupiedOases" xml:space="preserve">
+    <value>Include occupied oasis</value>
+  </data>
+  <data name="FarmlistCreatedSuccessfully" xml:space="preserve">
+    <value>Farmlist created successfully</value>
+  </data>
+  <data name="PreventSameAllianceVillages" xml:space="preserve">
+    <value>Prevent same alliance players</value>
+  </data>
+  <data name="RallypointTabHeader" xml:space="preserve">
+    <value>Rallypoint</value>
+  </data>
+  <data name="InvalidInterval" xml:space="preserve">
+    <value>Invalid number</value>
+  </data>
+  <data name="AccountInformationVillagesCount" xml:space="preserve">
+    <value>Villages:</value>
+  </data>
+  <data name="Coordinates" xml:space="preserve">
+    <value>Coordinates:</value>
+  </data>
+  <data name="Inactive" xml:space="preserve">
+    <value>Inactive</value>
+  </data>
+  <data name="Threshold" xml:space="preserve">
+    <value>Threshold</value>
+  </data>
+  <data name="HeroLevel" xml:space="preserve">
+    <value>Hero level:</value>
+  </data>
+  <data name="ResearchThisUnit" xml:space="preserve">
+    <value>Research this unit</value>
+  </data>
+  <data name="DeleteAll" xml:space="preserve">
+    <value>Delete All</value>
+  </data>
+  <data name="LicenseAccountsLimitHasBeenReached" xml:space="preserve">
+    <value>You have reached maximum accounts possible with this license, please upgrade to add more accounts.</value>
+  </data>
+  <data name="SyncAccounts" xml:space="preserve">
+    <value>Sync accounts</value>
+  </data>
+  <data name="Language" xml:space="preserve">
+    <value>Language:</value>
+  </data>
+  <data name="TrainingInVillage" xml:space="preserve">
+    <value>Training in village</value>
+  </data>
+  <data name="HeroPoints" xml:space="preserve">
+    <value>Hero points</value>
+  </data>
+  <data name="TabHeaderAcademyDesc" xml:space="preserve">
+    <value>To reserach troops, please choose them below</value>
+  </data>
+  <data name="LicenseAccountLimit" xml:space="preserve">
+    <value>Account limit:</value>
+  </data>
+  <data name="AllFarmlists" xml:space="preserve">
+    <value>All farmlists</value>
+  </data>
+  <data name="BuildingTitle21" xml:space="preserve">
+    <value>Workshop</value>
+  </data>
+  <data name="BuildingTitle20" xml:space="preserve">
+    <value>Stable</value>
+  </data>
+  <data name="BuildingTitle23" xml:space="preserve">
+    <value>Cranny</value>
+  </data>
+  <data name="BuildingTitle22" xml:space="preserve">
+    <value>Academy</value>
+  </data>
+  <data name="BuildingTitle25" xml:space="preserve">
+    <value>Residence</value>
+  </data>
+  <data name="BuildingTitle24" xml:space="preserve">
+    <value>Town Hall</value>
+  </data>
+  <data name="BuildingTitle27" xml:space="preserve">
+    <value>Treasury</value>
+  </data>
+  <data name="BuildingTitle26" xml:space="preserve">
+    <value>Palace</value>
+  </data>
+  <data name="BuildingTitle29" xml:space="preserve">
+    <value>Great Barracks</value>
+  </data>
+  <data name="BuildingTitle28" xml:space="preserve">
+    <value>Trade Office</value>
+  </data>
+  <data name="BuildingTitle30" xml:space="preserve">
+    <value>Great Stable</value>
+  </data>
+  <data name="BuildingTitle31" xml:space="preserve">
+    <value>City Wall</value>
+  </data>
+  <data name="BuildingTitle32" xml:space="preserve">
+    <value>Earth Wall</value>
+  </data>
+  <data name="BuildingTitle33" xml:space="preserve">
+    <value>Palisade</value>
+  </data>
+  <data name="BuildingTitle34" xml:space="preserve">
+    <value>Stonemason's Lodge</value>
+  </data>
+  <data name="BuildingTitle35" xml:space="preserve">
+    <value>Brewery</value>
+  </data>
+  <data name="BuildingTitle36" xml:space="preserve">
+    <value>Trapper</value>
+  </data>
+  <data name="BuildingTitle37" xml:space="preserve">
+    <value>Hero's Mansion</value>
+  </data>
+  <data name="BuildingTitle38" xml:space="preserve">
+    <value>Great Warehouse</value>
+  </data>
+  <data name="BuildingTitle39" xml:space="preserve">
+    <value>Great Granary</value>
+  </data>
+  <data name="BuildingTitle13" xml:space="preserve">
+    <value>Smithy</value>
+  </data>
+  <data name="BuildingTitle10" xml:space="preserve">
+    <value>Warehouse</value>
+  </data>
+  <data name="BuildingTitle11" xml:space="preserve">
+    <value>Granary</value>
+  </data>
+  <data name="BuildingTitle16" xml:space="preserve">
+    <value>Rally Point</value>
+  </data>
+  <data name="BuildingTitle17" xml:space="preserve">
+    <value>Marketplace</value>
+  </data>
+  <data name="BuildingTitle14" xml:space="preserve">
+    <value>Tournament Square</value>
+  </data>
+  <data name="BuildingTitle15" xml:space="preserve">
+    <value>Main Building</value>
+  </data>
+  <data name="BuildingTitle18" xml:space="preserve">
+    <value>Embassy</value>
+  </data>
+  <data name="BuildingTitle19" xml:space="preserve">
+    <value>Barracks</value>
+  </data>
+  <data name="BuildingTitle45" xml:space="preserve">
+    <value>Waterworks</value>
+  </data>
+  <data name="BuildingTitle44" xml:space="preserve">
+    <value>Command Center</value>
+  </data>
+  <data name="BuildingTitle43" xml:space="preserve">
+    <value>Makeshift Wall</value>
+  </data>
+  <data name="BuildingTitle42" xml:space="preserve">
+    <value>Stone Wall</value>
+  </data>
+  <data name="BuildingTitle41" xml:space="preserve">
+    <value>Horse Drinking Trough</value>
+  </data>
+  <data name="BuildingTitle40" xml:space="preserve">
+    <value>Wonder Of The World</value>
+  </data>
+  <data name="MachineIDCopied" xml:space="preserve">
+    <value>Machine ID copied to clipboard</value>
+  </data>
+  <data name="NewBuildingSoonAvailable" xml:space="preserve">
+    <value>Soon available</value>
+  </data>
+  <data name="RefreshCurrentVillage" xml:space="preserve">
+    <value>Refresh current village</value>
+  </data>
+  <data name="FarmlistTabHeader" xml:space="preserve">
+    <value>Farmlist</value>
+  </data>
+  <data name="ErrorNotConnectedToInternet" xml:space="preserve">
+    <value>Not connected to internet</value>
+  </data>
+  <data name="DontSendWhenHealthIfAboveTwentyPercent" xml:space="preserve">
+    <value>Dont send to adventure when hero health is below 20%</value>
+  </data>
+  <data name="Population" xml:space="preserve">
+    <value>Population:</value>
+  </data>
+  <data name="CheckEvery" xml:space="preserve">
+    <value>Check every</value>
+  </data>
+  <data name="AccountInformationTribe" xml:space="preserve">
+    <value>Tribe:</value>
+  </data>
+  <data name="CopyrightTxt" xml:space="preserve">
+    <value>© All right reserved for Travian Builder Team</value>
+  </data>
+  <data name="IncludeOnlyEmptyOases" xml:space="preserve">
+    <value>Only add empty oases</value>
+  </data>
+  <data name="CreateFarmlist" xml:space="preserve">
+    <value>Create farmlist</value>
+  </data>
+  <data name="AccountInformationPopulation" xml:space="preserve">
+    <value>Population:</value>
+  </data>
+  <data name="AnotherTaskExistsWithHigherLevel" xml:space="preserve">
+    <value>Another task exists for this building with higher level.</value>
+  </data>
+  <data name="ExchangeOnNegativeCrop" xml:space="preserve">
+    <value>Exchange on negative crop</value>
+  </data>
+  <data name="EnableAllFarmlists" xml:space="preserve">
+    <value>Enable all farmlists</value>
+  </data>
+  <data name="Villages" xml:space="preserve">
+    <value>Villages:</value>
+  </data>
+  <data name="UnitTitle30" xml:space="preserve">
+    <value>Settler</value>
+  </data>
+  <data name="UnitTitle31" xml:space="preserve">
+    <value>Rat</value>
+  </data>
+  <data name="UnitTitle32" xml:space="preserve">
+    <value>Spider</value>
+  </data>
+  <data name="UnitTitle33" xml:space="preserve">
+    <value>Snake</value>
+  </data>
+  <data name="UnitTitle34" xml:space="preserve">
+    <value>Bat</value>
+  </data>
+  <data name="UnitTitle35" xml:space="preserve">
+    <value>Wild Boar</value>
+  </data>
+  <data name="UnitTitle36" xml:space="preserve">
+    <value>Wolf</value>
+  </data>
+  <data name="UnitTitle37" xml:space="preserve">
+    <value>Bear</value>
+  </data>
+  <data name="UnitTitle38" xml:space="preserve">
+    <value>Crocodile</value>
+  </data>
+  <data name="UnitTitle39" xml:space="preserve">
+    <value>Tiger</value>
+  </data>
+  <data name="UnitTitle12" xml:space="preserve">
+    <value>Spearman</value>
+  </data>
+  <data name="UnitTitle13" xml:space="preserve">
+    <value>Axeman</value>
+  </data>
+  <data name="UnitTitle10" xml:space="preserve">
+    <value>Settler</value>
+  </data>
+  <data name="UnitTitle11" xml:space="preserve">
+    <value>Clubswinger</value>
+  </data>
+  <data name="UnitTitle16" xml:space="preserve">
+    <value>Teutonic Knight</value>
+  </data>
+  <data name="UnitTitle17" xml:space="preserve">
+    <value>Ram</value>
+  </data>
+  <data name="UnitTitle14" xml:space="preserve">
+    <value>Scout</value>
+  </data>
+  <data name="UnitTitle15" xml:space="preserve">
+    <value>Paladin</value>
+  </data>
+  <data name="UnitTitle18" xml:space="preserve">
+    <value>Catapult</value>
+  </data>
+  <data name="UnitTitle19" xml:space="preserve">
+    <value>Chief</value>
+  </data>
+  <data name="UnitTitle21" xml:space="preserve">
+    <value>Phalanx</value>
+  </data>
+  <data name="UnitTitle20" xml:space="preserve">
+    <value>Settler</value>
+  </data>
+  <data name="UnitTitle23" xml:space="preserve">
+    <value>Pathfinder</value>
+  </data>
+  <data name="UnitTitle22" xml:space="preserve">
+    <value>Swordsman</value>
+  </data>
+  <data name="UnitTitle25" xml:space="preserve">
+    <value>Druidrider</value>
+  </data>
+  <data name="UnitTitle24" xml:space="preserve">
+    <value>Theutates Thunder</value>
+  </data>
+  <data name="UnitTitle27" xml:space="preserve">
+    <value>Ram</value>
+  </data>
+  <data name="UnitTitle26" xml:space="preserve">
+    <value>Haeduan</value>
+  </data>
+  <data name="UnitTitle29" xml:space="preserve">
+    <value>Chieftain</value>
+  </data>
+  <data name="UnitTitle28" xml:space="preserve">
+    <value>Catapult</value>
+  </data>
+  <data name="UnitTitle70" xml:space="preserve">
+    <value>Settler</value>
+  </data>
+  <data name="UnitTitle56" xml:space="preserve">
+    <value>Resheph Chariot</value>
+  </data>
+  <data name="UnitTitle57" xml:space="preserve">
+    <value>Ram</value>
+  </data>
+  <data name="UnitTitle54" xml:space="preserve">
+    <value>Sopdu Explorer</value>
+  </data>
+  <data name="UnitTitle55" xml:space="preserve">
+    <value>Anhur Guard</value>
+  </data>
+  <data name="UnitTitle52" xml:space="preserve">
+    <value>Ash Warden</value>
+  </data>
+  <data name="UnitTitle53" xml:space="preserve">
+    <value>Khopesh Warrior</value>
+  </data>
+  <data name="UnitTitle50" xml:space="preserve">
+    <value>Settler</value>
+  </data>
+  <data name="UnitTitle51" xml:space="preserve">
+    <value>Slave Militia</value>
+  </data>
+  <data name="UnitTitle58" xml:space="preserve">
+    <value>Stone Catapult</value>
+  </data>
+  <data name="UnitTitle59" xml:space="preserve">
+    <value>Nomarch</value>
+  </data>
+  <data name="UnitTitle65" xml:space="preserve">
+    <value>Marksman</value>
+  </data>
+  <data name="UnitTitle64" xml:space="preserve">
+    <value>Steppe Rider</value>
+  </data>
+  <data name="UnitTitle67" xml:space="preserve">
+    <value>Ram</value>
+  </data>
+  <data name="UnitTitle66" xml:space="preserve">
+    <value>Marauder</value>
+  </data>
+  <data name="UnitTitle61" xml:space="preserve">
+    <value>Mercenary</value>
+  </data>
+  <data name="UnitTitle60" xml:space="preserve">
+    <value>Settler</value>
+  </data>
+  <data name="UnitTitle63" xml:space="preserve">
+    <value>Spotter</value>
+  </data>
+  <data name="UnitTitle62" xml:space="preserve">
+    <value>Bowman</value>
+  </data>
+  <data name="UnitTitle69" xml:space="preserve">
+    <value>Logades</value>
+  </data>
+  <data name="UnitTitle68" xml:space="preserve">
+    <value>Catapult</value>
+  </data>
+  <data name="UnitTitle47" xml:space="preserve">
+    <value>War Elephant</value>
+  </data>
+  <data name="UnitTitle46" xml:space="preserve">
+    <value>Natarian Knight</value>
+  </data>
+  <data name="UnitTitle45" xml:space="preserve">
+    <value>Axerider</value>
+  </data>
+  <data name="UnitTitle44" xml:space="preserve">
+    <value>Birds Of Prey</value>
+  </data>
+  <data name="UnitTitle43" xml:space="preserve">
+    <value>Guardsman</value>
+  </data>
+  <data name="UnitTitle42" xml:space="preserve">
+    <value>Thorned Warrior</value>
+  </data>
+  <data name="UnitTitle41" xml:space="preserve">
+    <value>Pikeman</value>
+  </data>
+  <data name="UnitTitle40" xml:space="preserve">
+    <value>Elephant</value>
+  </data>
+  <data name="UnitTitle49" xml:space="preserve">
+    <value>Natarian Emperor</value>
+  </data>
+  <data name="UnitTitle48" xml:space="preserve">
+    <value>Ballista</value>
+  </data>
+  <data name="FileMenuHeader" xml:space="preserve">
+    <value>File</value>
+  </data>
+  <data name="Every" xml:space="preserve">
+    <value>Every</value>
+  </data>
+  <data name="Train" xml:space="preserve">
+    <value>Train</value>
+  </data>
+  <data name="Tasks" xml:space="preserve">
+    <value>Tasks</value>
+  </data>
+  <data name="AccountLimitHasBeenReachedPleaseRemoveAnAccountToContinue" xml:space="preserve">
+    <value>Account limit has been reached, please remove an account to continue.</value>
+  </data>
+  <data name="NewFarmlistSettings" xml:space="preserve">
+    <value>Farmlist</value>
+  </data>
+  <data name="CheckingForAdventures" xml:space="preserve">
+    <value>Checking for adventures</value>
+  </data>
+  <data name="Adventure" xml:space="preserve">
+    <value>Adventure</value>
+  </data>
+  <data name="Account" xml:space="preserve">
+    <value>Account</value>
+  </data>
+  <data name="SearchAndCreateNewFarmlist" xml:space="preserve">
+    <value>Search &amp; create</value>
+  </data>
+  <data name="MaximumIronThreshold" xml:space="preserve">
+    <value>Maximum iron threshold</value>
+  </data>
+  <data name="InvalidTriggerPercent" xml:space="preserve">
+    <value>Invalid trigger percent</value>
+  </data>
+  <data name="NoTownhallFoundInVillage" xml:space="preserve">
+    <value>No townhall found in this village</value>
+  </data>
+  <data name="CheckForBuildingUpgradesEvery" xml:space="preserve">
+    <value>Check for building upgrades every:</value>
+  </data>
+  <data name="ExistingFarmlistMustBeSelected" xml:space="preserve">
+    <value>Farmlsit must be selected</value>
+  </data>
+  <data name="TabHeaderSmithy" xml:space="preserve">
+    <value>Smithy</value>
+  </data>
+  <data name="AutoSendRed" xml:space="preserve">
+    <value>Automatically raid red farms</value>
+  </data>
+  <data name="NextCheckAt" xml:space="preserve">
+    <value>Next check at:</value>
+  </data>
+  <data name="BuildingLevelIsMoreThanMaxPossible" xml:space="preserve">
+    <value>Building level is higher than max level</value>
+  </data>
+  <data name="BuyLicense" xml:space="preserve">
+    <value>Buy license</value>
+  </data>
+  <data name="AccountLoginAdd" xml:space="preserve">
+    <value>New account</value>
+  </data>
+  <data name="AllTo10" xml:space="preserve">
+    <value>All to 10</value>
+  </data>
+  <data name="LicenseIsValidNO" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="OnlyEmptyOases" xml:space="preserve">
+    <value>Only attack oases with no units</value>
+  </data>
+  <data name="Settings" xml:space="preserve">
+    <value>Settings</value>
+  </data>
+  <data name="AccountInformationPlayer" xml:space="preserve">
+    <value>Player:</value>
+  </data>
+  <data name="AutomaticallyExchangeIronOnThreshold" xml:space="preserve">
+    <value>Automatically exchange resources when iron is more than threshold</value>
+  </data>
+  <data name="CelebrationTypeSmall" xml:space="preserve">
+    <value>Small</value>
+  </data>
+  <data name="FailedToLoadProxy" xml:space="preserve">
+    <value>Failed to load proxy</value>
+  </data>
+  <data name="CheckingAcademyInVillage" xml:space="preserve">
+    <value>Checking academy in village</value>
+  </data>
+  <data name="CelebrationTypeLarge" xml:space="preserve">
+    <value>Large</value>
+  </data>
+  <data name="minutes" xml:space="preserve">
+    <value>minutes</value>
+  </data>
+  <data name="IncludeOases" xml:space="preserve">
+    <value>Include oases</value>
+  </data>
+  <data name="CheckingExchangeForVillage" xml:space="preserve">
+    <value>Checking for exchanges in village</value>
+  </data>
+  <data name="LastCheckAt" xml:space="preserve">
+    <value>Last check at:</value>
+  </data>
+  <data name="AccountInformationSilver" xml:space="preserve">
+    <value>Silver:</value>
+  </data>
+  <data name="NewBuildingSubmit" xml:space="preserve">
+    <value>Submit</value>
+  </data>
+  <data name="AccountInformationGold" xml:space="preserve">
+    <value>Gold:</value>
+  </data>
+  <data name="AccountInformationRank" xml:space="preserve">
+    <value>Rank:</value>
+  </data>
+  <data name="Village" xml:space="preserve">
+    <value>Village:</value>
+  </data>
+  <data name="LimitToHalfMinutesInterval" xml:space="preserve">
+    <value>You can only check every 0.5 minutes or more</value>
+  </data>
+  <data name="BuildingDescription5" xml:space="preserve">
+    <value>Lumber cut by your woodcutters is processed here. Based on its level, your sawmill can increase your lumber production by up to 25 percent.</value>
+  </data>
+  <data name="BuildingDescription4" xml:space="preserve">
+    <value>Your population`s food is produced here. By increasing the farm`s level, you increase its crop production.</value>
+  </data>
+  <data name="BuildingDescription7" xml:space="preserve">
+    <value>The iron foundry melts iron. Based on its level, your iron foundry can increase your iron production by up to 25 percent.</value>
+  </data>
+  <data name="BuildingDescription6" xml:space="preserve">
+    <value>The brickyard converts clay into bricks. Based on its level, your brickyard can increase your clay production by up to 25 percent.</value>
+  </data>
+  <data name="BuildingDescription1" xml:space="preserve">
+    <value>The woodcutter cuts down trees in order to produce lumber. The further you extend the woodcutter, the more lumber is produced</value>
+  </data>
+  <data name="BuildingDescription3" xml:space="preserve">
+    <value>Here miners produce the precious resource of iron. By increasing the mine`s level, you increase the iron production.</value>
+  </data>
+  <data name="BuildingDescription2" xml:space="preserve">
+    <value>Clay is produced here. By increasing its level, you increase the clay production.</value>
+  </data>
+  <data name="BuildingDescription9" xml:space="preserve">
+    <value>The bakery uses flour to make bread. In conjunction to the grain mill, the increase in crop production can go up to 50 percent in total.</value>
+  </data>
+  <data name="BuildingDescription8" xml:space="preserve">
+    <value>Here, your grain is ground/milled in order to produce flour. Based on its level, your Grain Mill can increase your crop production by up to 25 percent. </value>
+  </data>
+  <data name="SendToHardAdventures" xml:space="preserve">
+    <value>Send to hard adventures</value>
+  </data>
+  <data name="EnableAccountAutomation" xml:space="preserve">
+    <value>Enable account for automation</value>
+  </data>
+  <data name="NewBuildingTypeResources" xml:space="preserve">
+    <value>Resources</value>
+  </data>
+  <data name="MaximumCropThreshold" xml:space="preserve">
+    <value>Maximum crop threshold</value>
+  </data>
+  <data name="NewBuildingAvailable" xml:space="preserve">
+    <value>Available</value>
+  </data>
+  <data name="AccountLoginDelete" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="BuildingLevelIsRequiredForConstruction" xml:space="preserve">
+    <value>Building level is required</value>
+  </data>
+  <data name="FarmlistVillageMustBeSelected" xml:space="preserve">
+    <value>Farmlist village needs to be selected</value>
+  </data>
+  <data name="CheckSmithyEvery" xml:space="preserve">
+    <value>Check smithy every</value>
+  </data>
+  <data name="youHaveLoggedInSuccessfully" xml:space="preserve">
+    <value>You`ve been logged in</value>
+  </data>
+  <data name="IncludeNatarsVillages" xml:space="preserve">
+    <value>Include Natars villages</value>
+  </data>
+  <data name="MaximumClayThreshold" xml:space="preserve">
+    <value>Maximum clay threshold</value>
+  </data>
+  <data name="AppTitle" xml:space="preserve">
+    <value>TrBuilder</value>
+  </data>
+  <data name="NewFarmlistVillageName" xml:space="preserve">
+    <value>Village:</value>
+  </data>
+  <data name="CheckingForBuildingsUpgrades" xml:space="preserve">
+    <value>Checking for buildings upgrades</value>
+  </data>
+  <data name="BuildingDescription41" xml:space="preserve">
+    <value>The horse drinking trough cares for the well-being of your horses and therefore increases the speed of their training.   The horse drinking trough reduces the crop usage for one for the following soldiers: Equites Legati from level 10, Equites Imperatoris from level 15 and Equites Caesaris from level 20.   The horse drinking trough can only be built by Romans..</value>
+  </data>
+  <data name="BuildingDescription40" xml:space="preserve">
+    <value>The Wonder of the World represents the pride of all architecture. Only the mightiest and richest are able to build such a master work and defend it against envious enemies. Wonders of the World can only be erected in one of the old Natarian villages. However, a construction plan is also necessary. Starting with level 50, an additional plan is needed for its completion. The second plan one has to be owned by another player in the same alliance.</value>
+  </data>
+  <data name="BuildingDescription43" xml:space="preserve">
+    <value>By building a makeshift wall, you can protect your village against the barbarian hordes of your enemies. The higher its level, the higher is the bonus given to your forces' defence.  The makeshift wall can only be built by Huns, its defence bonus is like the Teutonic earth wall and its durability is like the Roman city wall.</value>
+  </data>
+  <data name="BuildingDescription42" xml:space="preserve">
+    <value>By building a stone wall, you can protect your village against the barbarian hordes of your enemies. The higher its level, the higher is the bonus given to your forces' defence. The stone wall can only be built by Egyptians, its defence bonus is like the Gaulish Palisade and its durability is like the Teutonic earth wall.</value>
+  </data>
+  <data name="BuildingDescription45" xml:space="preserve">
+    <value>With the Waterworks you regulate the water flow to your oases. This not only helps growing trees and crops, but is also useful for quarries and mines supplying workers with water and transporting resources. This building increases the bonus of all annexed oases. Its maximum effect on level 20 doubles the effect of oases. The Waterworks can only be built by Egyptians.</value>
+  </data>
+  <data name="BuildingDescription44" xml:space="preserve">
+    <value>The Command Center protects the village against enemy conquests. You can build one Command Center per village. Settlers and Senators/Chiefs/Chieftains/Nomarchs/Logades can be trained there.</value>
+  </data>
+  <data name="BuildingDescription14" xml:space="preserve">
+    <value>Your troops can increase their stamina at the tournament square. The further the building is upgraded the faster your troops are beyond a minimum distance of 20 squares.</value>
+  </data>
+  <data name="BuildingDescription15" xml:space="preserve">
+    <value>The main building is the home of the village's master builders. The higher its level, the faster your master builders complete the construction of new buildings. </value>
+  </data>
+  <data name="BuildingDescription16" xml:space="preserve">
+    <value>Your village's troops gather here. From here, you can send them out to conquer, attack, raid or reinforce other villages.</value>
+  </data>
+  <data name="BuildingDescription17" xml:space="preserve">
+    <value>At the marketplace, you can trade resources with other players. The higher its level, the more resources can be transported at the same time. </value>
+  </data>
+  <data name="BuildingDescription10" xml:space="preserve">
+    <value>In your warehouse, the resources lumber, clay and iron are stored. By increasing its level, you increase your warehouse's capacity.</value>
+  </data>
+  <data name="BuildingDescription11" xml:space="preserve">
+    <value>In the granary, the crop produced on your farms is stored. By increasing its level, you increase the granary’s capacity.</value>
+  </data>
+  <data name="BuildingDescription13" xml:space="preserve">
+    <value>The smithy improves the weapons and armour of your troops. By increasing its level, you can order the fabrication of even better weapons and armour. </value>
+  </data>
+  <data name="BuildingDescription18" xml:space="preserve">
+    <value>The embassy is a place for diplomats. The higher its level, the more options the king gains.</value>
+  </data>
+  <data name="BuildingDescription19" xml:space="preserve">
+    <value>In the barracks, infantry can be trained. The higher its level, the faster the troops are trained.</value>
+  </data>
+  <data name="BuildingDescription36" xml:space="preserve">
+    <value>The trapper protects your village with well hidden traps. This means that unwary enemies can be imprisoned and won't be able to harm your village any more. </value>
+  </data>
+  <data name="BuildingDescription37" xml:space="preserve">
+    <value>In the hero's mansion, you can get an overview of the surrounding oasis. Starting with building level 10, you can occupy oases with your hero and increase the resource production of your village. </value>
+  </data>
+  <data name="BuildingDescription34" xml:space="preserve">
+    <value>The stonemason's lodge is an expert in cutting stone. The further the building is extended the higher the stability of the village's buildings. The bonus applies to all buildings, regardless of resource fields, buildings or the wall.</value>
+  </data>
+  <data name="BuildingDescription35" xml:space="preserve">
+    <value>Tasty mead is brewed in the brewery and later quaffed by the soldiers during the celebrations.  These drinks make your soldiers braver and stronger when attacking others (1% per level). Unfortunately, the chiefs’ power of persuasion is decreased and catapults can only do random hits.  It can only be built by Teutons and only in their capital. It affects the whole empire.</value>
+  </data>
+  <data name="BuildingDescription32" xml:space="preserve">
+    <value>By building an earth wall, you can protect your village against the barbarian hordes of your enemies. The higher its level, the higher is the bonus given to your forces' defence.</value>
+  </data>
+  <data name="BuildingDescription33" xml:space="preserve">
+    <value>By building a palisade, you can protect your village against the barbarian hordes of your enemies. The higher its level, the higher is the bonus given to your forces' defence. </value>
+  </data>
+  <data name="BuildingDescription30" xml:space="preserve">
+    <value>The great stable allows you to build more units at the same time but they cost thrice the original amount.</value>
+  </data>
+  <data name="BuildingDescription31" xml:space="preserve">
+    <value>By building a city wall, you can protect your village against the barbarian hordes of your enemies. The higher its level, the higher is the bonus given to your forces' defence. </value>
+  </data>
+  <data name="BuildingDescription38" xml:space="preserve">
+    <value>The great warehouse has 3 times the capacity of a normal warehouse.  This building can only be built in wonder of the world villages or with a special Natarian artefact.</value>
+  </data>
+  <data name="BuildingDescription39" xml:space="preserve">
+    <value>The great granary has 3 times the capacity of a normal granary.  This building can only be built in wonder of the world villages or with a special Natarian artefact.</value>
+  </data>
+  <data name="BuildingDescription27" xml:space="preserve">
+    <value>The riches of your empire are kept in the treasury. Your treasury has room for only one treasure. After you have captured an artefact, it takes 24 hours on a normal server and 12 hours on a 3x speed server for the artefact to become effective. </value>
+  </data>
+  <data name="BuildingDescription26" xml:space="preserve">
+    <value>The King or Queen of the empire lives in the palace. Only one palace can exist in your realm at a time. You need a palace in order to proclaim a village as your capital.</value>
+  </data>
+  <data name="BuildingDescription25" xml:space="preserve">
+    <value>The residence is a small palace, where the king or queen lives when (s)he visits the village. The residence protects the village against enemies who want to conquer it.</value>
+  </data>
+  <data name="BuildingDescription24" xml:space="preserve">
+    <value>In the town hall, you can hold pompous celebrations. Such a celebration increases your culture points.</value>
+  </data>
+  <data name="BuildingDescription23" xml:space="preserve">
+    <value>The cranny is used to hide some of your resources when the village is attacked. These resources cannot be stolen. </value>
+  </data>
+  <data name="BuildingDescription22" xml:space="preserve">
+    <value>In the academy, new unit types can be researched. By increasing its level, you can order the research of better units. After you researched the units in your academy, you can train them in this village. </value>
+  </data>
+  <data name="BuildingDescription21" xml:space="preserve">
+    <value>Siege economyengines, like catapults and rams, can be built in the workshop. The higher its level, the faster these units are produced.</value>
+  </data>
+  <data name="BuildingDescription20" xml:space="preserve">
+    <value>In the stable, your cavalry is trained. The higher its level, the faster the troops are trained. </value>
+  </data>
+  <data name="BuildingDescription29" xml:space="preserve">
+    <value>The great barracks allows you to build more units at the same time but they cost thrice the original amount. </value>
+  </data>
+  <data name="BuildingDescription28" xml:space="preserve">
+    <value>In the trade office, the merchants' carts get improved and equipped with powerful horses. The higher its level, the more your merchants are able to carry. </value>
+  </data>
+  <data name="StartLocation" xml:space="preserve">
+    <value>Start location</value>
+  </data>
+  <data name="Refresh" xml:space="preserve">
+    <value>Refresh</value>
+  </data>
+  <data name="Experience" xml:space="preserve">
+    <value>Experience:</value>
+  </data>
+  <data name="FarmlistSettings" xml:space="preserve">
+    <value>Farmlist settings</value>
+  </data>
+  <data name="NewBuildingUpgradeToLevel" xml:space="preserve">
+    <value>Upgrade to level:</value>
+  </data>
+  <data name="AccountLoginLogout" xml:space="preserve">
+    <value>Logout</value>
+  </data>
+  <data name="TabHeaderBuildings" xml:space="preserve">
+    <value>Buildings</value>
+  </data>
+  <data name="OpenInBrowser" xml:space="preserve">
+    <value>Open browser</value>
+  </data>
+  <data name="CheckingFarmlists" xml:space="preserve">
+    <value>Checking farmlists</value>
+  </data>
+  <data name="InvalidExchangeInterval" xml:space="preserve">
+    <value>Exchange interval invalid</value>
+  </data>
+  <data name="Message" xml:space="preserve">
+    <value>Message</value>
+  </data>
+  <data name="NewFarmlistName" xml:space="preserve">
+    <value>New farmlist name:</value>
+  </data>
+  <data name="NewFarmlistType" xml:space="preserve">
+    <value>Type:</value>
+  </data>
+  <data name="HelpMenuHeader" xml:space="preserve">
+    <value>Help</value>
+  </data>
+  <data name="AccountLoginHeader" xml:space="preserve">
+    <value>Manage accounts</value>
+  </data>
+  <data name="LicenseID" xml:space="preserve">
+    <value>License ID:</value>
+  </data>
+  <data name="AutomaticallyRunCelebrations" xml:space="preserve">
+    <value>Automatically run celebrations enabled</value>
+  </data>
+  <data name="UpgradeBuildingSubmit" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="SetPointsAutomatically" xml:space="preserve">
+    <value>Set points automatically</value>
+  </data>
+  <data name="AutoSendYellow" xml:space="preserve">
+    <value>Automatically raid yellow farms</value>
+  </data>
+  <data name="GreatTraining" xml:space="preserve">
+    <value>Great</value>
+  </data>
+  <data name="DefensiveBonus" xml:space="preserve">
+    <value>Defensive bonus</value>
+  </data>
+  <data name="ExportSuccessfullyCompeleted" xml:space="preserve">
+    <value>Export completed</value>
+  </data>
+  <data name="InvalidResponseFromServer" xml:space="preserve">
+    <value>Invalid response received from server</value>
+  </data>
+  <data name="AccountMenuHeader" xml:space="preserve">
+    <value>Account</value>
+  </data>
+  <data name="Error_UsernameOrPasswordInCorrect" xml:space="preserve">
+    <value>Username or password incorrect</value>
+  </data>
+  <data name="AccountLoginServer" xml:space="preserve">
+    <value>Server:</value>
+  </data>
+  <data name="NoBuildingIsSelectedForConstruction" xml:space="preserve">
+    <value>No building is selected for construction</value>
+  </data>
+  <data name="ActiveFarmlists" xml:space="preserve">
+    <value>Active farmlists</value>
+  </data>
+  <data name="NewBuildingTypeInfrastructure" xml:space="preserve">
+    <value>Infrastructure</value>
+  </data>
+  <data name="CreateNewFarmlist" xml:space="preserve">
+    <value>Create new farmlist</value>
+  </data>
+  <data name="VillageName" xml:space="preserve">
+    <value>Name:</value>
+  </data>
+  <data name="InvalidCheckHeroPointsInterval" xml:space="preserve">
+    <value>Invalid hero points check interval</value>
+  </data>
+  <data name="NewBuildingWindowTitle" xml:space="preserve">
+    <value>New building</value>
+  </data>
+  <data name="TabHeaderVillage" xml:space="preserve">
+    <value>Village</value>
+  </data>
+  <data name="LicenseIsNotValid" xml:space="preserve">
+    <value>License is not valid</value>
+  </data>
+  <data name="TabHeaderCelebrations" xml:space="preserve">
+    <value>Celebrations</value>
+  </data>
+  <data name="CheckingCelebrationInVillage" xml:space="preserve">
+    <value>Checking for celebration for village</value>
+  </data>
+  <data name="TasksListViewHeaderLevel" xml:space="preserve">
+    <value>Level</value>
+  </data>
+  <data name="NewFarmlistTroops" xml:space="preserve">
+    <value>Troops</value>
+  </data>
+  <data name="TasksListViewHeaderField" xml:space="preserve">
+    <value>Field</value>
+  </data>
+  <data name="ExchangeTabHeader" xml:space="preserve">
+    <value>Exchange</value>
+  </data>
+  <data name="ThereIsNoTasksToExport" xml:space="preserve">
+    <value>There is not tasks to export</value>
+  </data>
+  <data name="LicenseInformationHeaderTitle" xml:space="preserve">
+    <value>License information</value>
+  </data>
+  <data name="CloseApplicationWarningMsg" xml:space="preserve">
+    <value>Are you sure you want to close the application?</value>
+  </data>
+  <data name="UpgradeToLevel" xml:space="preserve">
+    <value>Upgrade to level:</value>
+  </data>
+  <data name="CheckLicenseBtn" xml:space="preserve">
+    <value>Check license</value>
+  </data>
+  <data name="FarmlistPreventDuplicates" xml:space="preserve">
+    <value>Prevent duplicates</value>
+  </data>
+  <data name="InvalidHeroPoint" xml:space="preserve">
+    <value>Invalid points</value>
+  </data>
+  <data name="Date" xml:space="preserve">
+    <value>Date</value>
+  </data>
+  <data name="Copy" xml:space="preserve">
+    <value>Copy</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="CheckingSmithyInVillage" xml:space="preserve">
+    <value>Checking smithy in village</value>
+  </data>
+  <data name="AccountInformationWarehouseCapacity" xml:space="preserve">
+    <value>Warehouse:</value>
+  </data>
+  <data name="AccountInformationGranaryCapacity" xml:space="preserve">
+    <value>Granary:</value>
+  </data>
+</root>

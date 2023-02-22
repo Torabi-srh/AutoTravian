@@ -1,0 +1,373 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net7.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <LangVersion>10.0</LangVersion>
+    <UseWPF>true</UseWPF>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <ApplicationIcon>applicationIcon.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Resources\buildings\big\**" />
+    <EmbeddedResource Remove="Resources\buildings\big\**" />
+    <None Remove="Resources\buildings\big\**" />
+    <Page Remove="Resources\buildings\big\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="applicationIcon.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.1">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="WPF-UI" Version="2.0.3" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="6.0.1" />
+    <PackageReference Include="CommunityToolkit.Mvvm" Version="8.0.0" />
+	  <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="7.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Assets\applicationIcon-1024.png" />
+    <None Remove="Assets\applicationIcon-256.png" />
+    <None Remove="Resources\bgbuildings-ltr.jpg" />
+    <None Remove="Resources\buildings\g10-ltr.png" />
+    <None Remove="Resources\buildings\g11-ltr.png" />
+    <None Remove="Resources\buildings\g13-ltr.png" />
+    <None Remove="Resources\buildings\g14-ltr.png" />
+    <None Remove="Resources\buildings\g15-ltr.png" />
+    <None Remove="Resources\buildings\g16-ltr.png" />
+    <None Remove="Resources\buildings\g16e-ltr.png" />
+    <None Remove="Resources\buildings\g16e_ww-ltr.png" />
+    <None Remove="Resources\buildings\g16_ww-ltr.png" />
+    <None Remove="Resources\buildings\g17-ltr.png" />
+    <None Remove="Resources\buildings\g18-ltr.png" />
+    <None Remove="Resources\buildings\g19-ltr.png" />
+    <None Remove="Resources\buildings\g20-ltr.png" />
+    <None Remove="Resources\buildings\g21-ltr.png" />
+    <None Remove="Resources\buildings\g22-ltr.png" />
+    <None Remove="Resources\buildings\g23-ltr.png" />
+    <None Remove="Resources\buildings\g24-ltr.png" />
+    <None Remove="Resources\buildings\g25-ltr.png" />
+    <None Remove="Resources\buildings\g26-ltr.png" />
+    <None Remove="Resources\buildings\g27-ltr.png" />
+    <None Remove="Resources\buildings\g28-ltr.png" />
+    <None Remove="Resources\buildings\g29-ltr.png" />
+    <None Remove="Resources\buildings\g30-ltr.png" />
+    <None Remove="Resources\buildings\g31bottom-ltr.png" />
+    <None Remove="Resources\buildings\g31top-ltr.png" />
+    <None Remove="Resources\buildings\g32bottom-ltr.png" />
+    <None Remove="Resources\buildings\g32top-ltr.png" />
+    <None Remove="Resources\buildings\g33bottom-ltr.png" />
+    <None Remove="Resources\buildings\g33top-ltr.png" />
+    <None Remove="Resources\buildings\g34-ltr.png" />
+    <None Remove="Resources\buildings\g35-ltr.png" />
+    <None Remove="Resources\buildings\g36-ltr.png" />
+    <None Remove="Resources\buildings\g37-ltr.png" />
+    <None Remove="Resources\buildings\g38-ltr.png" />
+    <None Remove="Resources\buildings\g39-ltr.png" />
+    <None Remove="Resources\buildings\g40_0-ltr.png" />
+    <None Remove="Resources\buildings\g40_1-ltr.png" />
+    <None Remove="Resources\buildings\g40_10-ltr.png" />
+    <None Remove="Resources\buildings\g40_11-ltr.png" />
+    <None Remove="Resources\buildings\g40_2-ltr.png" />
+    <None Remove="Resources\buildings\g40_3-ltr.png" />
+    <None Remove="Resources\buildings\g40_4-ltr.png" />
+    <None Remove="Resources\buildings\g40_5-ltr.png" />
+    <None Remove="Resources\buildings\g40_6-ltr.png" />
+    <None Remove="Resources\buildings\g40_7-ltr.png" />
+    <None Remove="Resources\buildings\g40_8-ltr.png" />
+    <None Remove="Resources\buildings\g40_9-ltr.png" />
+    <None Remove="Resources\buildings\g41-ltr.png" />
+    <None Remove="Resources\buildings\g42bottom-ltr.png" />
+    <None Remove="Resources\buildings\g42top-ltr.png" />
+    <None Remove="Resources\buildings\g43bottom-ltr.png" />
+    <None Remove="Resources\buildings\g43top-ltr.png" />
+    <None Remove="Resources\buildings\g44-ltr.png" />
+    <None Remove="Resources\buildings\g45-ltr.png" />
+    <None Remove="Resources\buildings\g5-ltr.png" />
+    <None Remove="Resources\buildings\g6-ltr.png" />
+    <None Remove="Resources\buildings\g7-ltr.png" />
+    <None Remove="Resources\buildings\g8-ltr.png" />
+    <None Remove="Resources\buildings\g9-ltr.png" />
+    <None Remove="Resources\buildings\iso.png" />
+    <None Remove="Resources\clock_medium.png" />
+    <None Remove="Resources\dashboard.png" />
+    <None Remove="Resources\fields\bgResources.jpg" />
+    <None Remove="Resources\fields\f1.png" />
+    <None Remove="Resources\fields\f10.png" />
+    <None Remove="Resources\fields\f11.png" />
+    <None Remove="Resources\fields\f12.png" />
+    <None Remove="Resources\fields\f2.png" />
+    <None Remove="Resources\fields\f3.png" />
+    <None Remove="Resources\fields\f4.png" />
+    <None Remove="Resources\fields\f5.png" />
+    <None Remove="Resources\fields\f6.png" />
+    <None Remove="Resources\fields\f7.png" />
+    <None Remove="Resources\fields\f8.png" />
+    <None Remove="Resources\fields\f9.png" />
+    <None Remove="Resources\fluent-ui-microsoft.png" />
+    <None Remove="Resources\geo_icons.png" />
+    <None Remove="Resources\gold.png" />
+    <None Remove="Resources\halo_infinite.jpg" />
+    <None Remove="Resources\logo.png" />
+    <None Remove="Resources\master_chief.jpg" />
+    <None Remove="Resources\microsoft-icon-store.png" />
+    <None Remove="Resources\microsoft-shell-accessibility.ico" />
+    <None Remove="Resources\microsoft-shell-colors.ico" />
+    <None Remove="Resources\microsoft-shell-desktop.ico" />
+    <None Remove="Resources\microsoft-shell-gallery.ico" />
+    <None Remove="Resources\microsoft-shell-monitor.ico" />
+    <None Remove="Resources\microsoft-shell-settings.ico" />
+    <None Remove="Resources\microsoft-shell-workspace.ico" />
+    <None Remove="Resources\refresh.png" />
+    <None Remove="Resources\reporticon\att-green.png" />
+    <None Remove="Resources\reporticon\att-red.png" />
+    <None Remove="Resources\reporticon\att-yellow.png" />
+    <None Remove="Resources\resources\clay_large.png" />
+    <None Remove="Resources\resources\crop_large.png" />
+    <None Remove="Resources\resources\granary_medium.png" />
+    <None Remove="Resources\resources\iron_large.png" />
+    <None Remove="Resources\resources\lumber_large.png" />
+    <None Remove="Resources\resources\warehouse_medium.png" />
+    <None Remove="Resources\silver.png" />
+    <None Remove="Resources\tb-icon.png" />
+    <None Remove="Resources\the_witcher_wallpaper.jpg" />
+    <None Remove="Resources\tribes\egyptian_medium.png" />
+    <None Remove="Resources\tribes\egyptian_small.png" />
+    <None Remove="Resources\tribes\gaul_medium.png" />
+    <None Remove="Resources\tribes\gaul_small.png" />
+    <None Remove="Resources\tribes\hun_medium.png" />
+    <None Remove="Resources\tribes\hun_small.png" />
+    <None Remove="Resources\tribes\natar_medium.png" />
+    <None Remove="Resources\tribes\natar_small.png" />
+    <None Remove="Resources\tribes\roman_medium.png" />
+    <None Remove="Resources\tribes\roman_small.png" />
+    <None Remove="Resources\tribes\teuton_medium.png" />
+    <None Remove="Resources\tribes\teuton_small.png" />
+    <None Remove="Resources\units\01.png" />
+    <None Remove="Resources\units\02.png" />
+    <None Remove="Resources\units\03.png" />
+    <None Remove="Resources\units\04.png" />
+    <None Remove="Resources\units\05.png" />
+    <None Remove="Resources\units\06.png" />
+    <None Remove="Resources\units\07.png" />
+    <None Remove="Resources\units\08.png" />
+    <None Remove="Resources\units\09.png" />
+    <None Remove="Resources\units\10.png" />
+    <None Remove="Resources\units\11.png" />
+    <None Remove="Resources\units\12.png" />
+    <None Remove="Resources\units\13.png" />
+    <None Remove="Resources\units\14.png" />
+    <None Remove="Resources\units\15.png" />
+    <None Remove="Resources\units\16.png" />
+    <None Remove="Resources\units\17.png" />
+    <None Remove="Resources\units\18.png" />
+    <None Remove="Resources\units\19.png" />
+    <None Remove="Resources\units\20.png" />
+    <None Remove="Resources\units\21.png" />
+    <None Remove="Resources\units\22.png" />
+    <None Remove="Resources\units\23.png" />
+    <None Remove="Resources\units\24.png" />
+    <None Remove="Resources\units\25.png" />
+    <None Remove="Resources\units\26.png" />
+    <None Remove="Resources\units\27.png" />
+    <None Remove="Resources\units\28.png" />
+    <None Remove="Resources\units\29.png" />
+    <None Remove="Resources\units\30.png" />
+    <None Remove="Resources\units\31.png" />
+    <None Remove="Resources\units\32.png" />
+    <None Remove="Resources\units\33.png" />
+    <None Remove="Resources\units\34.png" />
+    <None Remove="Resources\units\35.png" />
+    <None Remove="Resources\units\36.png" />
+    <None Remove="Resources\units\37.png" />
+    <None Remove="Resources\units\38.png" />
+    <None Remove="Resources\units\39.png" />
+    <None Remove="Resources\units\40.png" />
+    <None Remove="Resources\units\41.png" />
+    <None Remove="Resources\units\42.png" />
+    <None Remove="Resources\units\43.png" />
+    <None Remove="Resources\units\44.png" />
+    <None Remove="Resources\units\45.png" />
+    <None Remove="Resources\units\46.png" />
+    <None Remove="Resources\units\47.png" />
+    <None Remove="Resources\units\48.png" />
+    <None Remove="Resources\units\49.png" />
+    <None Remove="Resources\units\50.png" />
+    <None Remove="Resources\units\51.png" />
+    <None Remove="Resources\units\52.png" />
+    <None Remove="Resources\units\53.png" />
+    <None Remove="Resources\units\54.png" />
+    <None Remove="Resources\units\55.png" />
+    <None Remove="Resources\units\56.png" />
+    <None Remove="Resources\units\57.png" />
+    <None Remove="Resources\units\58.png" />
+    <None Remove="Resources\units\59.png" />
+    <None Remove="Resources\units\60.png" />
+    <None Remove="Resources\units\61.png" />
+    <None Remove="Resources\units\62.png" />
+    <None Remove="Resources\units\63.png" />
+    <None Remove="Resources\units\64.png" />
+    <None Remove="Resources\units\65.png" />
+    <None Remove="Resources\units\66.png" />
+    <None Remove="Resources\units\67.png" />
+    <None Remove="Resources\units\68.png" />
+    <None Remove="Resources\units\69.png" />
+    <None Remove="Resources\units\70.png" />
+    <None Remove="Resources\units\99.gif" />
+    <None Remove="Resources\units\hero.png" />
+    <None Remove="Resources\wpfui.png" />
+    <None Remove="Resources\wpfui_full.png" />
+    <None Remove="Views\Pages\10.40.19.49.png" />
+    <None Remove="Views\Pages\open_graph_1200x630.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AutoTravian.Core\AutoTravian.Core.csproj" />
+    <ProjectReference Include="..\TaskScheduler-master\TaskScheduler\TaskScheduler.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Assets\applicationIcon-1024.png" />
+    <Resource Include="Assets\applicationIcon-256.png" />
+    <Resource Include="Resources\bgbuildings-ltr.jpg" />
+    <Resource Include="Resources\clock_medium.png" />
+    <Resource Include="Resources\dashboard.png" />
+    <Resource Include="Resources\fields\bgResources.jpg" />
+    <Resource Include="Resources\fields\f1.png" />
+    <Resource Include="Resources\fields\f10.png" />
+    <Resource Include="Resources\fields\f11.png" />
+    <Resource Include="Resources\fields\f12.png" />
+    <Resource Include="Resources\fields\f2.png" />
+    <Resource Include="Resources\fields\f3.png" />
+    <Resource Include="Resources\fields\f4.png" />
+    <Resource Include="Resources\fields\f5.png" />
+    <Resource Include="Resources\fields\f6.png" />
+    <Resource Include="Resources\fields\f7.png" />
+    <Resource Include="Resources\fields\f8.png" />
+    <Resource Include="Resources\fields\f9.png" />
+    <Resource Include="Resources\gold.png" />
+    <Resource Include="Resources\reporticon\att-green.png" />
+    <Resource Include="Resources\reporticon\att-red.png" />
+    <Resource Include="Resources\reporticon\att-yellow.png" />
+    <Resource Include="Resources\resources\clay_large.png" />
+    <Resource Include="Resources\resources\crop_large.png" />
+    <Resource Include="Resources\resources\granary_medium.png" />
+    <Resource Include="Resources\resources\iron_large.png" />
+    <Resource Include="Resources\resources\lumber_large.png" />
+    <Resource Include="Resources\resources\warehouse_medium.png" />
+    <Resource Include="Resources\silver.png" />
+    <Resource Include="Resources\tribes\egyptian_medium.png" />
+    <Resource Include="Resources\tribes\egyptian_small.png" />
+    <Resource Include="Resources\tribes\gaul_medium.png" />
+    <Resource Include="Resources\tribes\gaul_small.png" />
+    <Resource Include="Resources\tribes\hun_medium.png" />
+    <Resource Include="Resources\tribes\hun_small.png" />
+    <Resource Include="Resources\tribes\natar_medium.png" />
+    <Resource Include="Resources\tribes\natar_small.png" />
+    <Resource Include="Resources\tribes\roman_medium.png" />
+    <Resource Include="Resources\tribes\roman_small.png" />
+    <Resource Include="Resources\tribes\teuton_medium.png" />
+    <Resource Include="Resources\tribes\teuton_small.png" />
+    <Resource Include="Resources\units\01.png" />
+    <Resource Include="Resources\units\02.png" />
+    <Resource Include="Resources\units\03.png" />
+    <Resource Include="Resources\units\04.png" />
+    <Resource Include="Resources\units\05.png" />
+    <Resource Include="Resources\units\06.png" />
+    <Resource Include="Resources\units\07.png" />
+    <Resource Include="Resources\units\08.png" />
+    <Resource Include="Resources\units\09.png" />
+    <Resource Include="Resources\units\10.png" />
+    <Resource Include="Resources\units\11.png" />
+    <Resource Include="Resources\units\12.png" />
+    <Resource Include="Resources\units\13.png" />
+    <Resource Include="Resources\units\14.png" />
+    <Resource Include="Resources\units\15.png" />
+    <Resource Include="Resources\units\16.png" />
+    <Resource Include="Resources\units\17.png" />
+    <Resource Include="Resources\units\18.png" />
+    <Resource Include="Resources\units\19.png" />
+    <Resource Include="Resources\units\20.png" />
+    <Resource Include="Resources\units\21.png" />
+    <Resource Include="Resources\units\22.png" />
+    <Resource Include="Resources\units\23.png" />
+    <Resource Include="Resources\units\24.png" />
+    <Resource Include="Resources\units\25.png" />
+    <Resource Include="Resources\units\26.png" />
+    <Resource Include="Resources\units\27.png" />
+    <Resource Include="Resources\units\28.png" />
+    <Resource Include="Resources\units\29.png" />
+    <Resource Include="Resources\units\30.png" />
+    <Resource Include="Resources\units\31.png" />
+    <Resource Include="Resources\units\32.png" />
+    <Resource Include="Resources\units\33.png" />
+    <Resource Include="Resources\units\34.png" />
+    <Resource Include="Resources\units\35.png" />
+    <Resource Include="Resources\units\36.png" />
+    <Resource Include="Resources\units\37.png" />
+    <Resource Include="Resources\units\38.png" />
+    <Resource Include="Resources\units\39.png" />
+    <Resource Include="Resources\units\40.png" />
+    <Resource Include="Resources\units\41.png" />
+    <Resource Include="Resources\units\42.png" />
+    <Resource Include="Resources\units\43.png" />
+    <Resource Include="Resources\units\44.png" />
+    <Resource Include="Resources\units\45.png" />
+    <Resource Include="Resources\units\46.png" />
+    <Resource Include="Resources\units\47.png" />
+    <Resource Include="Resources\units\48.png" />
+    <Resource Include="Resources\units\49.png" />
+    <Resource Include="Resources\units\50.png" />
+    <Resource Include="Resources\units\51.png" />
+    <Resource Include="Resources\units\52.png" />
+    <Resource Include="Resources\units\53.png" />
+    <Resource Include="Resources\units\54.png" />
+    <Resource Include="Resources\units\55.png" />
+    <Resource Include="Resources\units\56.png" />
+    <Resource Include="Resources\units\57.png" />
+    <Resource Include="Resources\units\58.png" />
+    <Resource Include="Resources\units\59.png" />
+    <Resource Include="Resources\units\60.png" />
+    <Resource Include="Resources\units\61.png" />
+    <Resource Include="Resources\units\62.png" />
+    <Resource Include="Resources\units\63.png" />
+    <Resource Include="Resources\units\64.png" />
+    <Resource Include="Resources\units\65.png" />
+    <Resource Include="Resources\units\66.png" />
+    <Resource Include="Resources\units\67.png" />
+    <Resource Include="Resources\units\68.png" />
+    <Resource Include="Resources\units\69.png" />
+    <Resource Include="Resources\units\70.png" />
+    <Resource Include="Resources\units\99.gif" />
+    <Resource Include="Resources\units\hero.png" />
+    <Resource Include="Resources\10.40.19.49.png" />
+    <Resource Include="Resources\open_graph_1200x630.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <Generator>PublicResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Resources\buildings\" />
+  </ItemGroup>
+
+</Project>

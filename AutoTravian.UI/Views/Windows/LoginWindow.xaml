@@ -1,0 +1,47 @@
+﻿<ui:UiWindow x:Class="AutoTravian.UI.Views.Windows.LoginWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:AutoTravian.UI.Views.Windows"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:pages="clr-namespace:AutoTravian.UI.Views.Pages"
+    xmlns:ui="http://schemas.lepo.co/wpfui/2022/xaml"
+    Title="{Binding ViewModel.ApplicationTitle, Mode=OneWay}"
+    Width="400"
+    Height="500"
+    d:DataContext="{d:DesignInstance local:MainWindow,
+                                     IsDesignTimeCreatable=True}"
+    d:Background="{DynamicResource ApplicationBackgroundBrush}"
+    Foreground="{DynamicResource TextFillColorPrimaryBrush}"
+    ExtendsContentIntoTitleBar="True"
+    WindowBackdropType="Mica"
+    WindowCornerPreference="Round"
+    WindowStartupLocation="CenterOwner"
+    mc:Ignorable="d" Opacity="0.95" ResizeMode="NoResize">
+    <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="25,20,25,20">
+        <Image Source="/Resources/open_graph_1200x630.png" />
+        <Border Margin="25">
+            <StackPanel Orientation="Vertical">
+                <TextBlock>user:</TextBlock>
+                <ui:TextBox x:Name="User"
+                    Icon="PersonAccounts24"></ui:TextBox>
+            </StackPanel>
+        </Border>
+        <Border Margin="25">
+            <StackPanel Orientation="Vertical">
+                <TextBlock>Password:</TextBlock>
+                <ui:PasswordBox x:Name="Passwd"
+                    Icon="Password24"
+                    MaxLength="64"
+                    PasswordChar="*" />
+            </StackPanel>
+        </Border>
+        <Border Margin="25">
+            <StackPanel Orientation="Vertical">
+                <TextBlock>Server:</TextBlock>
+                <ui:TextBox x:Name="Server" Text="dev.ttwars.com" />
+            </StackPanel>
+        </Border>
+        <Button Content="Login" HorizontalContentAlignment="Center" HorizontalAlignment="Stretch" Margin="10,10,10,10" Click="Button_Click"></Button>
+    </StackPanel>
+</ui:UiWindow>
