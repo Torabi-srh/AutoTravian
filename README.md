@@ -1,1 +1,3 @@
 # AutoTravian
+
+![preview](Capture.JPG)
